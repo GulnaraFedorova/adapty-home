@@ -1,0 +1,89 @@
+.sdk-section {
+  padding: 100px 0;
+  background-color: #111111;
+  color: #ffffff;
+  width: 100%;
+}
+
+.sdk-section__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sdk-section__title {
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #ffffff;
+}
+
+.sdk-section__platforms {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sdk-section__platform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 32px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.sdk-section__platform:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-4px);
+}
+
+.sdk-section__platform-icon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.sdk-section__platform-name {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .sdk-section__container {
+    padding: 0 40px;
+  }
+  
+  .sdk-section__platforms {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .sdk-section__platforms {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 375px) {
+  .sdk-section {
+    padding: 60px 0;
+  }
+  
+  .sdk-section__title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  
+  .sdk-section__platform {
+    padding: 24px;
+  }
+}

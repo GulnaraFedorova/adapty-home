@@ -1,0 +1,34 @@
+.sla-section {
+  padding: 100px 0;
+  background-color: #fafafa;
+}
+
+.sla-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+  margin-top: 60px;
+}
+
+.sla-stat {
+  text-align: center;
+}
+
+.sla-stat-value {
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.sla-stat-label {
+  font-size: 18px;
+  color: var(--color-text-light);
+}
+
+@media (min-width: 768px) {
+  .sla-stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,267 @@
+.code-section {
+  padding: 100px 0;
+  background-color: #111111;
+  color: #ffffff;
+  width: 100%;
+}
+
+.code-section__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.code-section__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.code-section__text {
+  text-align: center;
+}
+
+.code-section__title {
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.code-section__description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 24px 0 32px;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.code-section__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s;
+  margin-bottom: 60px;
+}
+
+.code-section__cta:hover {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+.code-section__cta-arrow {
+  flex-shrink: 0;
+}
+
+.code-section__quote {
+  margin-top: 60px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  text-align: left;
+}
+
+.quote__mark {
+  width: 40px;
+  height: auto;
+  margin-bottom: 24px;
+  opacity: 0.5;
+}
+
+.quote__logo {
+  height: 40px;
+  width: auto;
+  margin-bottom: 24px;
+}
+
+.quote__text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 32px;
+  font-style: italic;
+}
+
+.quote__author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.quote__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.quote__author-name {
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.quote__author-position {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.code-section__media {
+  display: flex;
+  justify-content: center;
+}
+
+.code-tabs {
+  width: 100%;
+  max-width: 800px;
+  background-color: #212121;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.code-tabs__header {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid #333;
+  overflow-x: auto;
+}
+
+.code-tabs__tab {
+  padding: 16px 24px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.code-tabs__tab:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.code-tabs__tab--active {
+  color: #ffffff;
+  border-bottom-color: #7C3AED;
+}
+
+.code-tabs__content {
+  padding: 24px;
+}
+
+.code-tabs__code {
+  background-color: #1a1a1a;
+  padding: 24px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #EEFFFF;
+  margin: 0;
+}
+
+.code-tabs__code code {
+  font-family: inherit;
+}
+
+.code-tabs__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-top: 1px solid #333;
+}
+
+.code-tabs__footer-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+.code-tabs__github-logo {
+  width: 24px;
+  height: 24px;
+}
+
+.code-tabs__footer-text {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.code-tabs__footer-button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.code-tabs__footer-button:hover {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+@media (min-width: 1024px) {
+  .code-section__container {
+    padding: 0 40px;
+  }
+  
+  .code-section__content {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .code-section__text {
+    text-align: left;
+  }
+  
+  .code-section__description {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .code-section {
+    padding: 60px 0;
+  }
+  
+  .code-section__title {
+    font-size: 28px;
+  }
+  
+  .code-section__quote {
+    padding: 24px;
+  }
+  
+  .code-tabs__header {
+    flex-wrap: wrap;
+  }
+  
+  .code-tabs__tab {
+    padding: 12px 16px;
+    font-size: 12px;
+  }
+}

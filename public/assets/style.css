@@ -1,0 +1,14 @@
+/*
+ Theme Name:   Adapty Bricks Theme by VM
+ Theme URI:    https://adapty.io/
+ Description:  Adapty.io: theme build with BrickBuilder.
+ Author:       Adapty
+ Author URI:   https://mihalevich.dev
+ Template:     bricks
+ Version:      4.1
+ Text Domain:  adapty
+*/
+
+body {
+  min-height: 100vh;
+}
